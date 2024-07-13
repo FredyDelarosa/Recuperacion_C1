@@ -1,12 +1,14 @@
+//Contact.js
 class Contact {
-    firstName
-    lastName
-    phoneNumber
-    constructor(firstName, lastName, phoneNumber){
-        this.firstName = firstName
-        this.lastName = lastName
-        this.phoneNumber = phoneNumber
+    name;
+    age;
+    instrument;
+    
+    constructor(name, age, instrument){
+        this.name = name;
+        this.age = age;
+        this.instrument = instrument;
     }
 }
 
-export default Contact
+export default Contact;

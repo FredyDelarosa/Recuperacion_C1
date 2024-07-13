@@ -1,6 +1,7 @@
+//dependencies.js
 import BST from "../models/tree/BST.js";
 
-const bst = new BST()
-export {
-    bst
-}
+const bst = new BST();
+export { bst };
+
+

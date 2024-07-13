@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de contactos</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <title>Gestión de almanaque</title>
 </head>
 <body>
-    <input id="firstName" type="text" placeholder="firstName">
-    <input id="lastName" type="text" placeholder="lastName">
-    <input id="phoneNumber" type="text" placeholder="phoneNumber">
-    <button id="agenda-btn">Add</button>
+    <div class="form-container">
+        <h2>Almanaque de Elementos</h2>
+        <form id="almanaque-form">
+            <div class="form-group">
+                <input id="name" type="text" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input id="age" type="number" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input id="instrument" type="text" placeholder="Instrument">
+            </div>
+            <div class="form-group">
+                <button id="almanaque-btn" type="button">Add</button>
+            </div>
+            <div class="form-group">
+                <input type="number" id="searchQuery" placeholder="Search by Age">
+            </div>
+            <div class="form-group">
+                <button id="search-btn" type="button">Search</button>
+            </div>
+            <div class="form-group">
+                <button id="find-min-btn" type="button">Find Min</button>
+            </div>
+            <div class="form-group">
+                <button id="find-max-btn" type="button">Find Max</button>
+            </div>
+            <div class="form-group">
+                <button id="print-all-btn" type="button">Print All</button>
+            </div>
+        </form>
+    </div>
+
     <script type="module" src="./src/controllers/script.js"></script>
 </body>
 </html>
